@@ -95,6 +95,7 @@ header .navbar{
     color: var(--purple);
 }
 .nav-menu .nav-items .nav-button{
+    display: inline-block;
     padding: 8px 10px;
     background-color: var(--purple);
     border-radius: 8px;
@@ -102,6 +103,8 @@ header .navbar{
     font-size: var(--font-size-m);
     color: var(--white);
     font-family: var(--font-body);
+    text-decoration: none;
+    white-space: nowrap;
 }
 
 /* ── Hamburger & Close Buttons ── */
