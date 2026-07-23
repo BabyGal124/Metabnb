@@ -1,0 +1,128 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /*Colors */
+    --black:#000;
+    --text-black:#434343;
+    --purple:#A02279;
+    --white:#fff;
+    --black-bg:#0F0F0F;
+
+    /*Font Family */
+    --font-heading:'Poppins', sans-serif;
+    --font-body:'Roboto', sans-serif;
+
+
+    /*Font Size */
+    --font-size-n:1.0rem;
+    --font-size-m:1.2rem;
+    --font-size-1:2rem;
+    --font-size-x1:2.5rem;
+    --font-size-xx1:3rem;
+
+    /*Site max width */
+    --site-max-width:1200px;
+
+}
+
+/*Styling for the whole site */
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+button{
+    cursor: pointer;
+    border:none;
+    background:none;
+}
+html{
+    scroll-behavior: smooth;
+}
+.section-content{
+    margin:0 auto;
+    padding: 0 20px;
+    max-width: 1300px;
+}
+
+/*Header /Navbar Styling */
+header .navbar{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav-menu{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.nav-menu .nav-list{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.nav-details{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+.nav-logo{
+    width: 100%;
+}
+.nav-title{
+    font-family: var(--font-heading);
+    font-size: var(--font-size-1);
+    color: var(--black);
+}
+.nav-menu .nav-items .nav-links{
+    font-family: var(--font-body);
+    color: var(--black);
+    font-size: var(--font-size-m);
+     padding: 20px 25px;
+     align-items: center;
+}
+.nav-menu .nav-items .nav-links:hover{
+    color: var(--purple);
+}
+.nav-menu .nav-items .nav-button{
+    display: inline-block;
+    padding: 8px 10px;
+    background-color: var(--purple);
+    border-radius: 8px;
+    align-items: center;
+    font-size: var(--font-size-m);
+    color: var(--white);
+    font-family: var(--font-body);
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+/* ── Hamburger & Close Buttons ── */
+#menu-open-button {
+    display: none;
+    font-size: 1.6rem;
+    color: var(--black);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#menu-close-button {
+    display: none;
+    font-size: 1.6rem;
+    color: var(--black);
+    background: none;
+    border: none;
+    cursor: pointer;
+    align-self: flex-end;
+}
