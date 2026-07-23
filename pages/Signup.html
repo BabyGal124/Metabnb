@@ -1,20 +1,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Metabnb</title>
+    <!-- Linking Font Awesome Icons-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+<!--Liking Goggle Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<!--Linking Global Styling Sheet-->
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/signup.css">
 </head>
 <body>
     <header>
         <nav class="navbar section-content">
-            <a href="./index.html" class="nav-details"><img src="./images/icon1.png" alt="Company's Logo" class="nav-logo">
+            <a href="../index.html" class="nav-details"><img src="../images/icon1.png" alt="Metabnb logo with stylized house icon" class="nav-logo">
             <span class="nav-title">Metabnb</span>
         </a>
         <div class="nav-menu" id="nav-menu">
             <button id="menu-close-button" class="fas fa-times"></button>
             <ul class="nav-list">
                 <li class="nav-items">
-                    <a href="#" class="nav-links">Home</a>
+                    <a href="../index.html" class="nav-links">Home</a>
                 </li>
                 <li class="nav-items">
                     <a href="#" class="nav-links">Place to Stay</a>
@@ -26,12 +34,144 @@
                     <a href="#" class="nav-links">Community</a>
                 </li>
                 <li class="nav-items">
-                    <a href="./pages/Signup.html" class="nav-button">Sign Up</a>
+                    <a href="./Signup.html" class="nav-button">Sign Up</a>
                 </li>
             </ul>
         </div>
         <button id="menu-open-button" class="fas fa-bars"></button>
         </nav>
     </header>
+
+
+
+    <main>
+        <section class="signup-section" aria-labelledby="signup-title">
+            <div class="signup-container section-content">
+                <div class="signup-visual">
+                    <span class="signup-kicker">Your next stay starts here</span>
+                    <h1>Make space for more <em>possibility.</em></h1>
+                    <p>Join a community finding remarkable places to stay across the World.</p>
+                    <div class="signup-image-frame">
+                        <img src="../images/house 15.png" alt="A modern Metabnb home in the metaverse">
+                        <span class="image-caption"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Anywhere you imagine</span>
+                    </div>
+                </div>
+
+                <div class="signup-card">
+                    <div class="signup-card-heading">
+                        <p class="eyebrow">Welcome to Metabnb</p>
+                        <h2 id="signup-title">Create your account</h2>
+                        <p>Already a member? <a href="#signin">Sign in</a></p>
+                    </div>
+                    <form class="signup-form" action="#" method="post">
+                        <label for="full-name">Full name</label>
+                        <input id="full-name" name="full-name" type="text" placeholder="Enter your full name" autocomplete="name" required>
+
+                        <label for="email">Email address</label>
+                        <input id="email" name="email" type="email" placeholder="you@example.com" autocomplete="email" required>
+
+                        <label for="password">Password</label>
+                        <div class="password-field">
+                            <input id="password" name="password" type="password" placeholder="Create a password" autocomplete="new-password" minlength="8" required>
+                            <button type="button" class="password-toggle" aria-label="Show password"><i class="fa-regular fa-eye" aria-hidden="true"></i></button>
+                        </div>
+                        <p class="password-hint">Use at least 8 characters.</p>
+
+                        <label class="terms-check">
+                            <input type="checkbox" name="terms" required>
+                            <span>I agree to the <a href="#terms">Terms of Service</a> and <a href="#privacy">Privacy Policy</a>.</span>
+                        </label>
+
+                        <button type="submit" class="signup-submit">Create account <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+                    </form>
+                    <div class="signup-divider"><span>or continue with</span></div>
+                    <div class="social-signin" aria-label="Social sign-in options">
+                        <button type="button" class="social-button instagram-button" aria-label="Continue with Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i><span>Instagram</span></button>
+                        <button type="button" class="social-button facebook-button" aria-label="Continue with Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i><span>Facebook</span></button>
+                        <button type="button" class="social-button x-button" aria-label="Continue with X"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i><span>X</span></button>
+                    </div>
+                    
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!--Footer Section-->
+        <section class="footer-section">
+            <div class="section-content">
+                <div class="footer-info">
+                        <div class="footer-nav1">
+                            <div class="footer-logo">
+                                 <img src="../images/logo2.svg" alt="Metabnb logo" class="footer-nav-title1">
+                            </div>
+                       <div class="footer-link">
+                           <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-x"></i>
+                       </div>
+
+                        </div>
+                    <div class="footer-nav">
+                        <h3 class="footer-nav-title"> Community</h3>
+                        <ul class="footer-links">
+                            <li class="footer-link-items">
+                                <a href="#" class="footer-link">NFTs</a>
+                            </li>
+                             <li class="footer-link-items">
+                                <a href="#" class="footer-link">Tokens</a>
+                            </li>
+                             <li class="footer-link-items">
+                                <a href="#" class="footer-link">Landlord</a>
+                            </li>
+                             <li class="footer-link-items">
+                                <a href="#" class="footer-link">Discord</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                      <div class="footer-nav">
+                        <h3 class="footer-nav-title"> Places</h3>
+                        <ul class="footer-links">
+                            <li class="footer-link-items">
+                                <a href="#" class="footer-link">Castle</a>
+                            </li>
+                             <li class="footer-link-items">
+                                <a href="#" class="footer-link">Farm</a>
+                            </li>
+                             <li class="footer-link-items">
+                                <a href="#" class="footer-link">Beach</a>
+                            </li>
+                             <li class="footer-link-items">
+                                <a href="#" class="footer-link">Learn More</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                      <div class="footer-nav">
+                        <h3 class="footer-nav-title"> About Us</h3>
+                        <ul class="footer-links">
+                            <li class="footer-link-items">
+                                <a href="#" class="footer-link">Road Map</a>
+                            </li>
+                             <li class="footer-link-items">
+                                <a href="#" class="footer-link">Creators</a>
+                            </li>
+                             <li class="footer-link-items">
+                                <a href="#" class="footer-link">Career</a>
+                            </li>
+                             <li class="footer-link-items">
+                                <a href="#" class="footer-link">Contact Us</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                
+                    <div class="footer-copyright">
+                        <p class="copyright"> &copy; 2022 Metabnb</p>
+            </div>
+        </section>
+    </footer>
+
+    <script src="../js/script.js"></script>
 </body>
 </html>
